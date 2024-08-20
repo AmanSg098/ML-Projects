@@ -11,7 +11,7 @@ Product_Prices = []
 Product_Descriptions = []
 Product_Ratings = []
 
-for i in range(1,6):
+for i in range(1,6):   #number of loops can be increased as well
     url = "https://www.flipkart.com/search?q=mobiles%20under%2060000&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page="+str(i)
     res = requests.get(url)
     # checking the response
@@ -55,3 +55,7 @@ for i in range(1,6):
     print(len(Product_Descriptions))
     print(len(Product_Ratings))  # ok
 
+# creating a dataframe for products
+df = pd.DataFrame({'Product_Names':Product_Names,'Product_Descriptions':Product_Descriptions,
+                   'Product_Prices': Product_Prices,'Product_Ratings':Product_Ratings})
+print(df)
