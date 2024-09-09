@@ -1,4 +1,4 @@
-# importing mysql.connector - an api to connect to localhost mysql database
+# # importing mysql.connector - an api to connect to localhost mysql database
 # import mysql.connector
 
 # # creating a database connection object 
@@ -44,3 +44,48 @@
 #         cursor.close()
 #         mydb.close()
 #         print("Connection to the database is closed.")
+
+
+
+import mysql.connector
+from mysql.connector import Error
+
+try:
+    # Creating a database connection object
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        database="AMANDB",
+        password="Aman@5647$$root&"
+    )
+    
+    # Checking if the connection is made successfully or not
+    if mydb.is_connected():
+        print("Connection Successful with connection string -", mydb)
+    
+except Error as e:
+    print(f"Couldn't connect to database! - {e}")
+
+else:
+    # Using a cursor to interact with the database
+    cursor = mydb.cursor()
+
+    try:
+        # Example query to fetch data from PERSON table
+        query = "SELECT * FROM PERSON;"
+        cursor.execute(query)
+        rows = cursor.fetchall()
+        
+        # Printing all the rows fetched from the database
+        for row in rows:
+            print(row)
+
+    except Error as e:
+        print(f"Error executing query! - {e}")
+
+    finally:
+        # Closing the cursor and connection
+        cursor.close()
+        mydb.close()
+        print("Connection to the database is closed.")
+
