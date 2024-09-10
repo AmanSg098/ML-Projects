@@ -6,8 +6,8 @@
 #     mydb = mysql.connector.connect(
 #             host = "localhost",
 #             user = "root",
-#             database = "AMANDB",
-#             password = "Aman@5647$$root&"
+#             database = "your database name",
+#             password = "your password"
 #             )
 #     # checking if the connection is made successfully or not,
 #     #  if it does it returns a connection object in mydb
