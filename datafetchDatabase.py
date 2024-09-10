@@ -55,8 +55,8 @@ try:
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        database="AMANDB",
-        password="Aman@5647$$root&"
+        database="your database name",
+        password="your password"
     )
     
     # Checking if the connection is made successfully or not
