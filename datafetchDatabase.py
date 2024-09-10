@@ -8,6 +8,8 @@
 #             user = "root",
 #             database = "your database name",
 #             password = "your password"
+#             database = "your database",
+#             password = "your password"
 #             )
 #     # checking if the connection is made successfully or not,
 #     #  if it does it returns a connection object in mydb
