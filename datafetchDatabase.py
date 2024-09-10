@@ -6,8 +6,6 @@
 #     mydb = mysql.connector.connect(
 #             host = "localhost",
 #             user = "root",
-#             database = "your database name",
-#             password = "your password"
 #             database = "your database",
 #             password = "your password"
 #             )
