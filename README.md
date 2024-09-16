@@ -1,7 +1,2 @@
 # ML-Projects
-<b>This Repository contains my Academic Project on ML.</b>
-<br>
-<b>These Projects are:</b>
-<br>
-- Password Strength Checker
-- Cyberbullying Detection
+<b>This Repository contains my Academic Project on ML and Data Analysis and some Juyter Notebooks of Pandas and Numpy Practice.</b>
