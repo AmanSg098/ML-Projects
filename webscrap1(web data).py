@@ -30,7 +30,7 @@ tagFind = soup.find("header") # finds the first header tag
 tagFinddiv = tagFind.find("div") # finds the first div tag
 # print(tagFinddiv.a.span) # accessing the data inside the header.div tags
 
-# accessing the innenr tags using class attribute of theirs
+# accessing the innenr tags using class their attribute
 h4 = soup.find("h4",{"class":"price float-end card-title pull-right"})
 # OR
 desc = soup.find("p",class_ = "description")
